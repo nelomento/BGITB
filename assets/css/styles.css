@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto repeat(3, 150px)auto;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "header header header"
+    "sidebar main main"
+    "sidebar main main"
+    "sidebar main main"
+    "footer footer footer";
+
+}
+.grid-item{
+    background-color: blueviolet;
+    padding: 20px;
+    text-align: center;
+}
+.header{
+    grid-area: header;
+    background-color: brown;
+    color: #000;
+}
+.footer{
+    grid-area: footer;
+    background-color: aqua;
+    color: aliceblue;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: blue;
+    color: aliceblue;
+}
+.main{
+    grid-area: main;
+}
+@media (max-width: 600px) {
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "sidebar"
+        "main"
+        "footer";
+    }
+}
+button{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    font-size: 20px;
+    background-color: blue;
+    transition: width ease-in-out height 1s ease-in-out;
+    background-color: 1s ease-in-out;
+    border-radius: 20px;
+}
+button:hover{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(5px);
+    }
+}
+button h1:hover {
+    animation: shake 2s linear infinite;
+}
