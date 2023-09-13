@@ -2,13 +2,13 @@
     padding: 0;
     margin: 0;
 }
-h1, h2 {
+h1, header {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: larger;
 }
 body{
-    background-color: black;
+    background-color: rgb(68, 107, 167);
 }
 p {
     color: white;
@@ -19,36 +19,26 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 20px;
 }
 .menu a{
     text-decoration: none;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 50px;
-    margin: 50px;
+    padding: 20px;
+    margin: 100px;
+    
 }
 .menu a:hover {
     color: gray;
 }
-.hero{
-    display: flex;
+.photo-img{
+    width: 600px;
+    height: fit-content;
     align-items: center;
 }
-.photo img{
-    padding-bottom: 100px;
-    padding-top: 100px;
-    width: 600px;
-}
-.scroll{
-    margin-bottom: 50px;
-    color: white;
-}
-.fa-cart-twitter{
-    background-color: blue;
-    color: white;
-}
 @media(max-width:600px) {
-    .hero{
+    .menu{
         flex-direction: column;
     }
 }
