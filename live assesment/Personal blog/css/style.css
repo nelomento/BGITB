@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    
+}
+
+header {
+    background-image: url("../images/photo-1515886657613-9f3515b0c78f.avif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /*width: 100vw;
+    height: 100vh;
+    color: white;
+    padding: 10px;*/
+    text-align: left;
+}
+
+nav {
+    overflow: hidden;
+  }
+
+  .navbar-icon {
+    font-size: 30px;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+       
+.show {
+    display: block;
+  }
+  
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-media-post {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    section {
+        padding: 10px;
+    }
+}
