@@ -1,49 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>Nelo Recipe Card</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Recipe Card</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-4">
-      <div class="recipe-card" data-toggle="modal" data-target="#recipeModal">
-        <h3>Recipe Title</h3>
-        <p>Ingredients: Ingredient 1, Ingredient 2, Ingredient 3</p>
-      </div>
+<div class="row">
+    <div class="recipe-card">
+        <img src="./images/image5.jpg" alt="jollof rice">
+        <h2>nigerian jollof</h2>
+        <button class="view-recipe-btn" onclick="openModal()">View Recipe</button>
     </div>
-  </div>
+    <div class="recipe-card">
+        <img src="./images/image2.jpg" alt="Fried rice">
+        <h2>Ghanian jollof</h2>
+        <button class="view-recipe-btn" onclick="openModal()">View Recipe</button>
+    </div>
+    <div class="recipe-card">
+        <img src="./images/image3.jpg" alt="Egusi">
+        <h2>Fried rice</h2>
+        <button class="view-recipe-btn" onclick="openModal()">View Recipe</button>
+    </div>
+    <div class="recipe-card">
+        <img src="./images/image6.jpg" alt="Recipe Image">
+        <h2>Egusi</h2>
+        <button class="view-recipe-btn" onclick="openModal()">View Recipe</button>
+    </div>
 </div>
 
-<!-- Recipe Modal -->
-<div class="modal fade" id="recipeModal" tabindex="-1" role="dialog" aria-labelledby="recipeModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+<div id="modal" class="modal">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="recipeModalLabel">Recipe Title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body recipe-modal">
-        <p><strong>Ingredients:</strong> Ingredient 1, Ingredient 2, Ingredient 3</p>
-        <p><strong>Instructions:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Ingredients</h2>
+        <h3>rice, tomato, pepper</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Architecto distinctio, numquam quasi autem at dolorum.</p>
     </div>
-  </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+<script src="./js/index.js"></script>
 </body>
 </html>
