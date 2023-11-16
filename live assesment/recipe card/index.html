@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Recipe Card</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div class="row">
+    <div class="recipe-card">
+        <img src="./images/image5.jpg" alt="jollof rice">
+        <h2>nigerian jollof</h2>
+        <button class="view-recipe-btn" onclick="openModal()">View Recipe</button>
+    </div>
+    <div class="recipe-card">
+        <img src="./images/image2.jpg" alt="Fried rice">
+        <h2>Ghanian jollof</h2>
+        <button class="view-recipe-btn" onclick="openModal()">View Recipe</button>
+    </div>
+    <div class="recipe-card">
+        <img src="./images/image3.jpg" alt="Egusi">
+        <h2>Fried rice</h2>
+        <button class="view-recipe-btn" onclick="openModal()">View Recipe</button>
+    </div>
+    <div class="recipe-card">
+        <img src="./images/image6.jpg" alt="Recipe Image">
+        <h2>Egusi</h2>
+        <button class="view-recipe-btn" onclick="openModal()">View Recipe</button>
+    </div>
+</div>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Ingredients</h2>
+        <h3>rice, tomato, pepper</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Architecto distinctio, numquam quasi autem at dolorum.</p>
+    </div>
+</div>
+
+<script src="./js/index.js"></script>
+</body>
+</html>
